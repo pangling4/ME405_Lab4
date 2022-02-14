@@ -2,7 +2,8 @@
 @file StepResponse.py
  Test program to communicate with nucleo board through
  serial USB connection. Asks user to input proportional
- gain to be used and plots motor position vs time data.
+ gain to be used and plots the RC circuit's step response
+ vs time data.
 
 @author Jonathan Cederquist
 @author Tim Jain
