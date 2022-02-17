@@ -26,7 +26,7 @@ micropython.alloc_emergency_exception_buf(100)
 adc = pyb.ADC(pyb.Pin.board.PC0)
 ADC_data = task_share.Queue('h', 1100, thread_protect = False, name = "ADC_data")
 count = 0
-MAX_data = 1100 # number of data points to collect
+MAX_data = 2000 # number of data points to collect
 #v_ref = adc.read_vref()
 
 # setup timer (this will be used as interrupt)
@@ -55,11 +55,10 @@ if __name__ == "__main__":
         # pause program until user 
         input("Run step response? [Press 'Enter']")
         # set callback function on timer interrupt service routine
-        tim1.callback(read_ADC)
-        
+        tim1.callback(read_ADC) 
         # print first data point before step response is executed
-        print(0, ADC_data.get())
-        
+        ADC_data.get()
+       
         # send 3.3V through PC1
         out_PC1.high()
         
