@@ -9,7 +9,7 @@
 @author Tim Jain
 @author Philip Pang
 
-@date   2-Feb-2022
+@date   Last Modified 2/16/22
 """
 
 import serial
@@ -88,6 +88,7 @@ while True:
         print('The time constant is at t=: ', tauTime, ' s')
         tauTArray = [tauTime, tauTime]
         tauVertical = [0, V]
+        
         # PLOTTING
         fig, plt = pp.subplots()
         plt.plot(timeList, positionList)

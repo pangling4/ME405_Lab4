@@ -13,7 +13,7 @@ and the task_share.py file to implement the Queue.
 
 The step response we obtained from our test is shown below in Figure 1. 
 
-## Time Constant Theoretical Calculation 
+### Time Constant Theoretical Calculation 
 Our circuit was constructed with a 100 kΩ resistor and a 3.3 μF
 capacitor. Therefore, the time constant of the circuit is simply
 
@@ -27,13 +27,13 @@ which for us results in
 
 This will be compared to the experimental result in the following section.
 
-## Time Constant Experimental Result
+### Time Constant Experimental Result
 The following figure shows our plot of the step response with lines
 showing the final value, value at 1 time constant, and the value of the
-time constant. As shown on the plot, the we found the experimental time
-constant to be 0.371 s. This is a 12% difference from the theoretical
-value, which is well within the expected range considering the loose
-tolerances on electrical components.
+time constant. As shown on the plot, we found the value of the 
+experimental time constant to be 0.367 s. This is an 11% difference 
+from the theoretical value, which is well within the expected range
+considering the loose tolerances on electrical components.
 
 ![RC Circuit Step Response!](rc_step.png)
 

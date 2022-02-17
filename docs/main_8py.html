@@ -72,29 +72,35 @@ $(document).ready(function(){initNavTree('main_8py.html',''); initResizable(); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7f20f5a38d173a0a6bf586250d10b08e"><td class="memItemLeft" align="right" valign="top"><a id="a7f20f5a38d173a0a6bf586250d10b08e"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>main.read_ADC</b> (which_timer)</td></tr>
+<tr class="memitem:a7f20f5a38d173a0a6bf586250d10b08e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8py.html#a7f20f5a38d173a0a6bf586250d10b08e">main.read_ADC</a> (which_timer)</td></tr>
+<tr class="memdesc:a7f20f5a38d173a0a6bf586250d10b08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function which saves the current ADC value to a queue.  <a href="main_8py.html#a7f20f5a38d173a0a6bf586250d10b08e">More...</a><br /></td></tr>
 <tr class="separator:a7f20f5a38d173a0a6bf586250d10b08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:afac357daa82cb1f4a2ca28df4f60bb14"><td class="memItemLeft" align="right" valign="top"><a id="afac357daa82cb1f4a2ca28df4f60bb14"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>main.adc</b> = pyb.ADC(pyb.Pin.board.PC0)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8py.html#afac357daa82cb1f4a2ca28df4f60bb14">main.adc</a> = pyb.ADC(pyb.Pin.board.PC0)</td></tr>
+<tr class="memdesc:afac357daa82cb1f4a2ca28df4f60bb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC input pin. <br /></td></tr>
 <tr class="separator:afac357daa82cb1f4a2ca28df4f60bb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e86049125fb8d62e1193c232ddf7836"><td class="memItemLeft" align="right" valign="top"><a id="a2e86049125fb8d62e1193c232ddf7836"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>main.ADC_data</b> = <a class="el" href="classtask__share_1_1_queue.html">task_share.Queue</a>('h', 1100, thread_protect = False, name = &quot;ADC_data&quot;)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8py.html#a2e86049125fb8d62e1193c232ddf7836">main.ADC_data</a> = <a class="el" href="classtask__share_1_1_queue.html">task_share.Queue</a>('h', 2000, thread_protect = False, name = &quot;ADC_data&quot;)</td></tr>
+<tr class="memdesc:a2e86049125fb8d62e1193c232ddf7836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue to store step response data. <br /></td></tr>
 <tr class="separator:a2e86049125fb8d62e1193c232ddf7836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a5390527cdf5753221a7432590e55a"><td class="memItemLeft" align="right" valign="top"><a id="ab4a5390527cdf5753221a7432590e55a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main.count</b> = 0</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8py.html#ab4a5390527cdf5753221a7432590e55a">main.count</a> = 0</td></tr>
+<tr class="memdesc:ab4a5390527cdf5753221a7432590e55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter to turn off interrupt function after specificed time. <br /></td></tr>
 <tr class="separator:ab4a5390527cdf5753221a7432590e55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb4afbb11aa3c2d84c21b319115f8bd1"><td class="memItemLeft" align="right" valign="top"><a id="abb4afbb11aa3c2d84c21b319115f8bd1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main.MAX_data</b> = 2000</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8py.html#abb4afbb11aa3c2d84c21b319115f8bd1">main.MAX_data</a> = 2000</td></tr>
+<tr class="memdesc:abb4afbb11aa3c2d84c21b319115f8bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of data points to collect. <br /></td></tr>
 <tr class="separator:abb4afbb11aa3c2d84c21b319115f8bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a9332526e578cfb310b854a7a79f288"><td class="memItemLeft" align="right" valign="top"><a id="a5a9332526e578cfb310b854a7a79f288"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>main.tim1</b> = pyb.Timer (1, freq=1000)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8py.html#a5a9332526e578cfb310b854a7a79f288">main.tim1</a> = pyb.Timer (1, freq=1000)</td></tr>
+<tr class="memdesc:a5a9332526e578cfb310b854a7a79f288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer 1 used for internal interrupt. <br /></td></tr>
 <tr class="separator:a5a9332526e578cfb310b854a7a79f288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9709d94efcc56a2459bde9524387ee"><td class="memItemLeft" align="right" valign="top"><a id="a6e9709d94efcc56a2459bde9524387ee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>main.out_PC1</b> = pyb.Pin (pyb.Pin.board.PC1, pyb.Pin.OUT_PP)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8py.html#a6e9709d94efcc56a2459bde9524387ee">main.out_PC1</a> = pyb.Pin (pyb.Pin.board.PC1, pyb.Pin.OUT_PP)</td></tr>
+<tr class="memdesc:a6e9709d94efcc56a2459bde9524387ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output pin to run step response. <br /></td></tr>
 <tr class="separator:a6e9709d94efcc56a2459bde9524387ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -105,8 +111,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main.MAX_data</b> = 20
 Tim Jain </dd>
 <dd>
 Philip Pang</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>Last Modified 2/10/22 </dd></dl>
-</div></div><!-- contents -->
+<dl class="section date"><dt>Date</dt><dd>Last Modified 2/16/22 </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7f20f5a38d173a0a6bf586250d10b08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f20f5a38d173a0a6bf586250d10b08e">&#9670;&nbsp;</a></span>read_ADC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.read_ADC </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>which_timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function which saves the current ADC value to a queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">which_timer</td><td>The timer which triggers the interrupt </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

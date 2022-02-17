@@ -25,10 +25,7 @@
 var NAVTREE =
 [
   [ "ME 405: Lab 4", "index.html", [
-    [ "Lab 4: Interrupts", "index.html", [
-      [ "Time Constant Theoretical Calculation", "index.html#autotoc_md1", null ],
-      [ "Time Constant Experimental Result", "index.html#autotoc_md2", null ]
-    ] ],
+    [ "Lab 4: Interrupts", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

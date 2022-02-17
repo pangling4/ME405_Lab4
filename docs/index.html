@@ -66,17 +66,17 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_src_readme"></a>This exercise was an introduction to using internal interrupt on timer channels to have precisely controlled data collection. To practice this, we constructed a simple RC circuit and conducted a step response, which we measured at precise intervals using an interrupt. Because variables cannot be created inside interrupts, we used a precreated task_share Queue to save data points during the step response.</p>
 <p>This exercise involved a <a class="el" href="main_8py.html" title="This file executes a step input for an RC circuit and subsequently reads data of the circuit&#39;s step r...">main.py</a> file running on the Nucleo, a <a class="el" href="_step_response_8py.html" title="Test program to communicate with nucleo board through serial USB connection.">StepResponse.py</a> file running on the PC to process and plot the data, and the <a class="el" href="task__share_8py.html" title="This file contains classes which allow tasks to share data without the risk of data corruption by int...">task_share.py</a> file to implement the Queue.</p>
 <p>The step response we obtained from our test is shown below in Figure 1.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Time Constant Theoretical Calculation</h1>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Time Constant Theoretical Calculation</h2>
 <p>Our circuit was constructed with a 100 kΩ resistor and a 3.3 μF capacitor. Therefore, the time constant of the circuit is simply</p>
 <p>τ = RC,</p>
 <p>which for us results in</p>
 <p>τ = (1 x 10^5 Ω)(3.3 x 10^-6 F)</p>
 <p>τ = 0.330 s.</p>
 <p>This will be compared to the experimental result in the following section.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Time Constant Experimental Result</h1>
-<p>The following figure shows our plot of the step response with lines showing the final value, value at 1 time constant, and the value of the time constant. As shown on the plot, the we found the experimental time constant to be 0.371 s. This is a 12% difference from the theoretical value, which is well within the expected range considering the loose tolerances on electrical components.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Time Constant Experimental Result</h2>
+<p>The following figure shows our plot of the step response with lines showing the final value, value at 1 time constant, and the value of the time constant. As shown on the plot, we found the value of the experimental time constant to be 0.367 s. This is an 11% difference from the theoretical value, which is well within the expected range considering the loose tolerances on electrical components.</p>
 <p><img src="rc_step.png" alt="" class="inline" title="RC Circuit Step Response!"/></p>
 <p><em>Figure 1: Step response for RC Circuit showing time constant.</em> </p>
 </div></div><!-- PageDoc -->
