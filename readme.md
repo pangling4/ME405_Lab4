@@ -35,6 +35,6 @@ constant to be 0.371 s. This is a 12% difference from the theoretical
 value, which is well within the expected range considering the loose
 tolerances on electrical components.
 
-![RC Circuit Step Response!](Per_10.jpeg "Period:10")
+![RC Circuit Step Response!](rc_step.png)
 
 *Figure 1: Step response for RC Circuit showing time constant.*
